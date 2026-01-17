@@ -1,0 +1,17 @@
+def two_sum(num,target):
+    x=0
+    l=len(num)
+    while x<l:
+        z=x+1
+        while z<l:
+            if num[x]+num[z]==target:
+                return [x,z]
+            z+=1
+        x+=1
+    return []    
+list1=[2,7,12,15]
+target=9
+print(two_sum(list1,target))
+
+        
+  
