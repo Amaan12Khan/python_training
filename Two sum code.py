@@ -13,5 +13,17 @@ list1=[2,7,12,15]
 target=9
 print(two_sum(list1,target))
 
-        
-  
+def twosum(nums,target):
+    index=0
+    m={}
+    for val in nums:
+        res=target-val
+        if res in m:
+            return [m[res],index]
+        m[val]=index
+        index+=1
+    return []
+list1=[2,7,12,15]
+target=9
+print(twosum(list1,target))
++';l89`     `'
